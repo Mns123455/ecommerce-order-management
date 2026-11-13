@@ -1,0 +1,1 @@
+<project><modelVersion>4.0.0</modelVersion><groupId>com.ecommerce</groupId><artifactId>ecommerce-order-management</artifactId><version>1.0-SNAPSHOT</version><properties><maven.compiler.release>17</maven.compiler.release><project.build.sourceEncoding>UTF-8</project.build.sourceEncoding></properties></project>
