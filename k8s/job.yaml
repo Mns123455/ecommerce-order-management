@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ecommerce-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: ecommerce-container
+          image: ecommerce-order-management:v2
+          imagePullPolicy: Never
+      restartPolicy: Never

@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ecommerce-config
+data:
+  APP_NAME: "Ecommerce Order Management"
+  ENVIRONMENT: "development"
+  LOG_LEVEL: "INFO"
