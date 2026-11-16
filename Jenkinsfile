@@ -37,10 +37,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        success {
-            echo 'Ecommerce application deployed successfully!'
-        }
-    }
 }
