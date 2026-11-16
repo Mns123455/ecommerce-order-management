@@ -17,13 +17,12 @@ pipeline {
         }
 
         stage('SonarQube Analysis') {
-            steps {
-                withSonarQubeEnv('SonarQube') {
-                    bat 'mvn sonar:sonar -Dsonar.projectKey=ecommerce-order-management'
-                }
-            }
+    steps {
+        withSonarQubeEnv('SonarQube') {
+            bat 'mvn sonar:sonar -Dsonar.projectKey=ecommerce-order-management'
         }
-
+    }
+}
         stage('Docker Build') {
             steps {
                 bat 'docker build -f dockerfile -t ecommerce-order-management:v2 .'
